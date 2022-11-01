@@ -101,24 +101,4 @@ const initEvents =()=>{
         window.removeEventListener('mousemove', getMouse);
     }
 
-    iframe.ontouchstart = function (e) {
-        deltaY = e.targetTouches[0].pageY - moveModal.offsetTop;
-        window.addEventListener('touchmove', getTouch);
-    }
-
-    iframe.ontouchend = function (e) {
-        window.removeEventListener('touchmove', getTouch);
-    }
-
-    iframe.onmousedown = function (e) {
-        deltaY = e.pageY - moveModal.offsetTop;
-        window.addEventListener('mousemove', getMouse);
-    }
-
-    iframe.onmouseup = function (e) {
-        window.removeEventListener('mousemove', getMouse);
-    }
-
-    console.log('12')
-
 }
