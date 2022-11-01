@@ -30,10 +30,10 @@ body {
     position: absolute;
     content: "";
     display: block;
-    width: 36px;
-    height: 15px;
+    width: 30px;
+    height: 2px;
     left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-    background-color: #313030;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
 }
